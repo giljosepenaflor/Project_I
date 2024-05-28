@@ -28,10 +28,17 @@ body {
 
 h1 {
     color: #ff66c4;
-    font-size: 130px; /* Responsive font size based on viewport width */
-    margin-top: 50px; /* Adjusted margin for top spacing */
+    font-size: 8vw; /* Responsive font size based on viewport width */
+    margin-top: 5%; /* Adjusted margin for top spacing */
     font-family: 'BrittanySignature';
     margin-bottom: 2px;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 10vw; /* Adjust font size for smaller devices */
+    }
 }
 
 .baba {
