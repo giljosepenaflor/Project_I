@@ -61,14 +61,28 @@ h1 {
     margin-top: 200px;
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 10vw; /* Adjust font size for smaller devices */
+        margin-top: 500px;
+        margin-bottom: 0px;
+    }
+}
+
+
 p {
     color: white;
     font-size: 15px; /* Adjust font size */
-    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    font-family: 'Montserrat Regular'; /* Apply Montserrat font family */
     margin: 10px 0; /* Add some margin for spacing */
     margin-top: 50px;
 }
 
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 7px; /* Adjust font size for smaller devices */
+    }
+}
 
 
 .back-to-home {

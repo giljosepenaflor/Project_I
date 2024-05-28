@@ -64,6 +64,7 @@ h1 {
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 10vw; /* Adjust font size for smaller devices */
+        margin-top: 90px;
     }
 }
 
@@ -78,10 +79,9 @@ p {
     margin: 10px 0; /* Add some margin for spacing */
 }
 
-/* Media query for smaller devices */
 @media screen and (max-width: 600px) {
     p {
-        font-size: 6vw; /* Adjust font size for smaller devices */
+        font-size: 8px; /* Adjust font size for smaller devices */
     }
 }
 
@@ -93,6 +93,7 @@ p {
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     margin-top: 20px; /* Adjusted margin for top spacing */
 }
+
 
 .rectangle {
     width: 450px;
