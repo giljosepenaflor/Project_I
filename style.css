@@ -20,15 +20,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1200px;
     text-align: center;
 }
 
-/* Apply styles to the header */
 h1 {
     color: #ff66c4;
     font-size: 130px; /* Responsive font size based on viewport width */
-    margin-top: 1500px; /* Adjusted margin for top spacing */
+    margin-top: 50px; /* Adjusted margin for top spacing */
     font-family: 'BrittanySignature';
     margin-bottom: 2px;
 }
@@ -49,7 +47,6 @@ p {
     margin-top: 20px; /* Adjusted margin for top spacing */
 }
 
-/* Apply styles to the rectangles */
 .rectangle {
     width: 450px;
     height: 250px;
@@ -81,30 +78,46 @@ p {
 
 .row {
     display: flex;
+    flex-direction: column; /* Stack the iframe and image vertically */
     justify-content: center;
-    align-items: flex-start; /* Align items at the start vertically */
+    align-items: center;
+    width: 100%; /* Make sure the row takes the full width */
+    margin-top: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 90%; /* Adjust width for responsiveness */
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
 }
 
 .barbie {
-    width: auto; /* Allow the container width to adjust based on the image width */
+    width: 90%; /* Make the image responsive */
     max-width: 450px; /* Limit the maximum width of the container to match the rectangles */
     height: auto; /* Allow the container height to adjust based on the image height */
     margin: 15px; /* Add space around the container to match the rectangles */
     border-radius: 20px; /* Apply border radius */
-    position: relative; /* Positioning for the caption */
     overflow: hidden; /* Hide overflow for the caption */
-    opacity: 100; /* Initially hidden */
-    transition: opacity 0.5s ease; /* Add transition for smooth reveal */
 }
 
 .barbie img {
-    width: 75%; /* Make the image fill the container */
-    height: 75%; /* Ensure aspect ratio is maintained */
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Ensure aspect ratio is maintained */
     object-fit: cover; /* Maintain aspect ratio while covering the container */
     border-radius: 20px; /* Apply border radius */
-    margin-right: 0px;
-    margin-left: -60px;
-    
 }
 
 .rolling-text {
@@ -142,10 +155,12 @@ p {
     max-height: 40px; /* Adjust max height as needed */
 }
 
-iframe {
-    margin-top: 20px;
-    border-radius: 30px; /* Adjust the value as needed */
-    margin-left: 50px;
-    width: 1400px; /* Adjust width as needed */
-    height: 600px;
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row; /* Stack the iframe and image horizontally for larger screens */
+    }
+    .row iframe {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
 }
