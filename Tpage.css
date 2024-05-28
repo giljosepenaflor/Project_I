@@ -1,0 +1,164 @@
+/* Define the font face */
+@font-face {
+    font-family: 'BrittanySignature';
+    src: url('BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply styles to the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    background-image: url('TALENTED\ \ BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff66c4;
+    font-size: 130px;
+    margin-top: 500px; /* Adjusted margin for top spacing */
+    font-family: 'BrittanySignature';
+    margin-bottom: 2px;
+}
+
+p {
+    color: white;
+    font-size: 15px; /* Adjust font size */
+    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    margin: 10px 0; /* Add some margin for spacing */
+    margin-top: 5px;
+}
+
+.baba {
+    margin-top: 2000px;
+}
+
+.back-to-home {
+    color: white;
+    text-decoration: none;
+    background-color: #ff66c4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px; /* Adjust top margin */
+    margin-left: 20px; /* Adjust left margin */
+    position: absolute; /* Position absolutely */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+}
+
+.back-to-home:hover {
+    background-color: #ff3399;
+}
+
+iframe {
+    border-radius: 20px !important; /* Ensure the border radius is applied */
+    border: 10px solid white !important; /* Ensure the border is applied */
+    margin-top: 20px;
+}
+
+.carousel img {
+    margin-top: 100px;
+    width: 100%; /* Make images fill their container */
+    max-width: 300px; /* Limit maximum width of images */
+    border: 10px solid white; /* Add a white border */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    transform: rotate(-2deg); /* Rotate the images slightly */
+    margin-right: 10px; /* Add space between images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Apply the rotation and shadow effect only on hover */
+.carousel img:hover {
+    transform: rotate(0deg); /* Rotate back to normal on hover */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Increase shadow on hover */
+}
+
+
+
+  /* Style for the container */
+  .featured-container {
+    max-width: 550px;
+    height: auto;
+    margin: 20px auto; /* Adjusted margin */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the title */
+.featured-title {
+    font-size: 24px;
+    font-family: 'montserrat';
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style for the embedded profile */
+.instagram-media {
+    background: #FFF;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    margin: 1px;
+    max-width: 540px;
+    min-width: 326px;
+    height: 700px;
+    padding: 0;
+    width: 99.375%;
+    width: -webkit-calc(100% - 2px);
+    width: calc(100% - 2px);
+}
+
+/* Style for the Instagram caption */
+.instagram-media p {
+    color: #c9c8cd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 0px;
+    margin-bottom: 0;
+    margin-top: 8px;
+    overflow: hidden;
+    padding: 8px 0 7px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Style for the Instagram caption link */
+.instagram-media a {
+    color: #c9c8cd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 0px;
+    text-decoration: none;
+}
+/* Style for the embedded profile */
+
+.footer-logo {
+    position: fixed;
+    bottom: 10px; /* Adjust bottom position */
+    left: 10px; /* Adjust left position */
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+.footer-logo img {
+    width: auto; /* Let the width adjust to maintain aspect ratio */
+    max-height: 100px; /* Adjust max height as needed */
+}
+

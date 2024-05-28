@@ -1,0 +1,151 @@
+/* Define the font face */
+@font-face {
+    font-family: 'BrittanySignature';
+    src: url('BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply styles to the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    background-image: url('main_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    text-align: center;
+}
+
+/* Apply styles to the header */
+h1 {
+    color: #ff66c4;
+    font-size: 130px; /* Responsive font size based on viewport width */
+    margin-top: 1500px; /* Adjusted margin for top spacing */
+    font-family: 'BrittanySignature';
+    margin-bottom: 2px;
+}
+
+p {
+    color: white;
+    font-size: 15px; /* Adjust font size */
+    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+/* Apply styles to the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin-top: 20px; /* Adjusted margin for top spacing */
+}
+
+/* Apply styles to the rectangles */
+.rectangle {
+    width: 450px;
+    height: 250px;
+    background-color: #ddd;
+    transition: transform 0.3s;
+    margin: 15px; /* Add space around each rectangle */
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.rectangle:hover {
+    transform: scale(1.1); /* Make the rectangle 10% larger on hover */
+    cursor: pointer;
+}
+
+.rectangle1 {
+    background-image: url('LOVING.png'); 
+}
+
+.rectangle2 {
+    background-image: url('EMPATHETIC.png'); 
+}
+
+.rectangle3 {
+    background-image: url('TALENTED.png');
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start vertically */
+}
+
+.barbie {
+    width: auto; /* Allow the container width to adjust based on the image width */
+    max-width: 450px; /* Limit the maximum width of the container to match the rectangles */
+    height: auto; /* Allow the container height to adjust based on the image height */
+    margin: 15px; /* Add space around the container to match the rectangles */
+    border-radius: 20px; /* Apply border radius */
+    position: relative; /* Positioning for the caption */
+    overflow: hidden; /* Hide overflow for the caption */
+    opacity: 100; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Add transition for smooth reveal */
+}
+
+.barbie img {
+    width: 75%; /* Make the image fill the container */
+    height: 75%; /* Ensure aspect ratio is maintained */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    border-radius: 20px; /* Apply border radius */
+    margin-right: 0px;
+    margin-left: -60px;
+    
+}
+
+.rolling-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: white;
+    background-color: palevioletred;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    white-space: nowrap;
+    animation: rollToLeft 40s linear infinite;
+    z-index: 999;
+}
+
+/* Define the rolling animation */
+@keyframes rollToLeft {
+    from {
+        right: 100%;
+    }
+    to {
+        right: -100%;
+    }
+}
+
+.footer-logo {
+    position: fixed;
+    bottom: 10px; /* Adjust bottom position */
+    left: 10px; /* Adjust left position */
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+.footer-logo img {
+    width: auto; /* Let the width adjust to maintain aspect ratio */
+    max-height: 40px; /* Adjust max height as needed */
+}
+
+iframe {
+    margin-top: 20px;
+    border-radius: 30px; /* Adjust the value as needed */
+    margin-left: 50px;
+    width: 1400px; /* Adjust width as needed */
+    height: 600px;
+}

@@ -1,0 +1,147 @@
+/* Define the font face */
+@font-face {
+    font-family: 'BrittanySignature';
+    src: url('BrittanySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply styles to the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    background-image: url('EMPA\ BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff66c4;
+    font-size: 130px; /* Responsive font size based on viewport width */
+    margin-top: 9000px; /* Adjusted margin for top spacing */
+    font-family: 'BrittanySignature';
+    margin-bottom: 2px;
+    margin-top: 200px;
+}
+
+p {
+    color: white;
+    font-size: 15px; /* Adjust font size */
+    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    margin: 10px 0; /* Add some margin for spacing */
+    margin-top: 50px;
+}
+
+.baba{
+    margin-top: 1300px;
+}
+
+.back-to-home {
+    color: white;
+    text-decoration: none;
+    background-color: #ff66c4;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px; /* Adjust top margin */
+    margin-left: 20px; /* Adjust left margin */
+    position: absolute; /* Position absolutely */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+}
+
+.back-to-home:hover {
+    background-color: #ff3399;
+}
+
+
+.carousel img {
+    margin-top: 100px;
+    width: 100%; /* Make images fill their container */
+    max-width: 300px; /* Limit maximum width of images */
+    border: 10px solid white; /* Add a white border */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    transform: rotate(-2deg); /* Rotate the images slightly */
+    margin-right: 10px; /* Add space between images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Apply the rotation and shadow effect only on hover */
+.carousel img:hover {
+    transform: rotate(0deg); /* Rotate back to normal on hover */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); /* Increase shadow on hover */
+}
+
+/* Other styles remain unchanged */
+
+/* Container for the photo and message */
+.quote-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px auto; /* Adjust margin as needed */
+    max-width: 800px; /* Adjust max-width as needed */
+}
+
+/* Container for the photo */
+.photo-container {
+    flex: 1;
+}
+
+.message-container h2 {
+    color: white;
+    font-size: 24px; /* Adjust font size */
+    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: left; /* Align text to the left */
+    margin-left: -270px;
+    transform: rotate(-2deg); 
+}
+
+/* Style for the photo */
+.photo-container img {
+    width: 100%; /* Make photo fill its container */
+    max-width: 300px; /* Limit maximum width */
+    border: 10px solid white; /* Add a white border */
+    box-shadow: 0px 0px 20px rgb(255, 255, 255); /* Add a shadow effect */
+    transform: rotate(-2deg); /* Rotate the photo slightly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+    margin-top: 50px;
+}
+
+/* Container for the message */
+.message-container {
+    flex: 2;
+}
+
+/* Style for the message */
+.message-container p {
+    color: white;
+    font-size: 18px; /* Adjust font size */
+    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    margin: 10px; /* Add margin for spacing */
+    text-align: left; /* Align text to the left */
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+
+.footer-logo {
+    position: fixed;
+    bottom: 10px; /* Adjust bottom position */
+    left: 10px; /* Adjust left position */
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+.footer-logo img {
+    width: auto; /* Let the width adjust to maintain aspect ratio */
+    max-height: 100px; /* Adjust max height as needed */
+}
