@@ -70,6 +70,7 @@ p {
     transform: rotate(-2deg); /* Rotate the images slightly */
     margin-right: 10px; /* Add space between images */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+    margin-bottom: 30px;
 }
 
 /* Apply the rotation and shadow effect only on hover */
