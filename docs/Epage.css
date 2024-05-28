@@ -6,6 +6,34 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    src: url('Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat BoldItalic';
+    src: url('Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Apply styles to the body */
 body {
     margin: 0;
@@ -36,7 +64,7 @@ h1 {
 p {
     color: white;
     font-size: 15px; /* Adjust font size */
-    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    font-family: 'Montserrat Regular'; /* Apply Montserrat font family */
     margin: 10px 0; /* Add some margin for spacing */
     margin-top: 50px;
 }
@@ -99,7 +127,7 @@ p {
 .message-container h2 {
     color: white;
     font-size: 24px; /* Adjust font size */
-    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    font-family: 'Montserrat Regular'; /* Apply Montserrat font family */
     margin: 10px 0; /* Add margin for spacing */
     text-align: left; /* Align text to the left */
     margin-left: -270px;
@@ -126,7 +154,7 @@ p {
 .message-container p {
     color: white;
     font-size: 18px; /* Adjust font size */
-    font-family: 'Montserrat'; /* Apply Montserrat font family */
+    font-family: 'Montserrat Regular'; /* Apply Montserrat font family */
     margin: 10px; /* Add margin for spacing */
     text-align: left; /* Align text to the left */
     margin-left: 40px;
